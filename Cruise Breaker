@@ -1,0 +1,69 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+ 
+local Window = Library.CreateLib("Cruise Breaker", "DarkTheme")
+ 
+local Tab = Window:NewTab("Notes & Update")
+
+local Section = Tab:NewSection("Note: This button inspired by RemoteSpy")
+
+local Section = Tab:NewSection("Note 2: This gui inspired by Flopa")
+
+local Section = Tab:NewSection("Update: Nothing new")
+
+local Tab = Window:NewTab("Other")
+
+local Section = Tab:NewSection("Other")
+
+Section:NewButton("Inf money", "Give inf money",function()
+game:GetService("ReplicatedStorage").Remotes.giveCashEvent:FireServer(999999999)
+end)
+
+Section:NewButton("Inf ticket", "Give inf ticket",function()
+game:GetService("ReplicatedStorage").Remotes.giveTicketsEvent:FireServer(999999999)
+end)
+
+Section:NewButton("God mode", "Turn on God mode",function()
+game:GetService("ReplicatedStorage").Remotes.healPlayerEvent:FireServer(9999999)
+end)
+
+Section:NewButton("Be a ghost pirate", "Become a ghost pirate",function()
+game:GetService("ReplicatedStorage").Remotes.beThePirateEvent:FireServer(true)
+end)
+
+Section:NewButton("Revived(Works when you die)", "Get Revived",function()
+game:GetService("ReplicatedStorage").Remotes.reviveEvent:FireServer(true)
+end)
+
+local Tab = Window:NewTab("Spawn")
+
+local Section = Tab:NewSection("Spawn")
+
+Section:NewButton("Bloxycola", "Give Bloxycola",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("Bloxycola","Cash",0)
+end)
+
+Section:NewButton("Sandwich", "Give Sandwich",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("Sandwich","Cash",0)
+end)
+
+Section:NewButton("Pizza", "Give Pizza",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("Pizza","Cash",0)
+end)
+
+Section:NewButton("Icecream", "Give Icecream",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("Icecream","Cash",0)
+end)
+
+local Section = Tab:NewSection("Gamepass")
+
+Section:NewButton("Flashlight", "Give Flashlight",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("Flashlight","Cash",0)
+end)
+
+Section:NewButton("Giant Cookie", "Give Giant Cookie",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("GiantCookie","Cash",0)
+end)
+
+Section:NewButton("Water gun", "Give Water gun",function()
+game:GetService("ReplicatedStorage").Remotes.buyItemEvent:FireServer("WaterGun","Cash",0)
+end)
