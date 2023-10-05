@@ -22,7 +22,7 @@ Section:NewButton("Inf ticket", "Give inf ticket",function()
 game:GetService("ReplicatedStorage").Remotes.giveTicketsEvent:FireServer(999999999)
 end)
 
-Section:NewButton("God mode", "Turn on God mode",function()
+Section:NewButton("Heal max", "Heal max yourself",function()
 game:GetService("ReplicatedStorage").Remotes.healPlayerEvent:FireServer(9999999)
 end)
 
